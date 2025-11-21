@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import NavBar from "./components/NavBar";
-import ItemListContainer from "./components/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemListContainer from "./containers/ItemListContainer";
+import ItemDetailContainer from "./containers/ItemDetailContainer";
 import NotFound from "./components/NotFound";
 
 function App() {

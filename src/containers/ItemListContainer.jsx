@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import ItemCard from "./ItemCard";
+import ItemCard from "../components/ItemCard";
 import anilloGoldImg from "../assets/anillo-gold.jpg";
 import anilloPlataImg from "../assets/anillo-plata.jpg";
 import collarGoldImg from "../assets/collar-gold.jpg";
 import collarPlataImg from "../assets/collar-plata.jpg";
 import pulseraPlataImg from "../assets/pulsera-plata.jpg";
-import "./ItemListContainer.css";
+import "../styles/ItemListContainer.css";
 
 const joyas = [
   {

@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import "./CartWidget.css";
+import "../styles/CartWidget.css";
 
 function CartWidget({ carrito }) {
   const [open, setOpen] = useState(false);

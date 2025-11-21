@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "./ItemCard.css";
+import "../styles/ItemCard.css";
 
 function ItemCard({ producto, carrito, setCarrito }) {
   const agregarAlCarrito = () => {

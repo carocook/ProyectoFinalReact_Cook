@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ItemCount from "./ItemCount";
-import NotFound from "./NotFound";
+import ItemCount from "../components/ItemCount";
+import NotFound from "../components/NotFound";
 import anilloGoldImg from "../assets/anillo-gold.jpg";
 import anilloPlataImg from "../assets/anillo-plata.jpg";
 import collarGoldImg from "../assets/collar-gold.jpg";
 import collarPlataImg from "../assets/collar-plata.jpg";
 import pulseraPlataImg from "../assets/pulsera-plata.jpg";
-import "./ItemCard.css";
+import "../styles/ItemCard.css";
 
 const joyas = [
   { id: 1, nombre: "Anillo Ani Gold", precio: 120, img: anilloGoldImg },

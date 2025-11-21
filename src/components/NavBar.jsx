@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import CartWidget from "./CartWidget";
 import logo from "../assets/logo.png";
-import "./NavBar.css";
+import "../styles/NavBar.css";
 
 function NavBar({ carrito }) {
   const [menuOpen, setMenuOpen] = useState(false);
