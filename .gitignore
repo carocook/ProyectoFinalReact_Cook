@@ -1,1 +1,12 @@
-firebase.js
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+
+# Node
+node_modules/
+dist/
+
+# MacOS
+.DS_Store
