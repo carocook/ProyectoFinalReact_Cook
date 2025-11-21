@@ -1,0 +1,20 @@
+.item-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+  justify-items: center;
+}
+
+@media (max-width: 480px) {
+  .item-list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #545454;
+  font-family: "Lato", serif;
+}

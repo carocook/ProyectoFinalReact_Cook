@@ -1,0 +1,44 @@
+.item-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.count-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #d2d2d2;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.count-btn:hover {
+  background-color: #ffe07f;
+}
+
+.count-number {
+  min-width: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.add-cart-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  background-color: #d2d2d2;
+  color: #545454;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  transition: background-color 0.2s;
+}
+
+.add-cart-btn:hover {
+  background-color: #ffe07f;
+}
