@@ -4,8 +4,9 @@ import CartWidget from "./CartWidget";
 import logo from "../assets/logo.png";
 import "../styles/NavBar.css";
 
-function NavBar({ carrito }) {
+function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-logo">
@@ -30,7 +31,7 @@ function NavBar({ carrito }) {
       </ul>
 
       <div className="navbar-right">
-        <CartWidget carrito={carrito} />
+        <CartWidget />
         <div
           className={`hamburger ${menuOpen ? "open" : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}

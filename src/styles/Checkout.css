@@ -1,0 +1,103 @@
+.checkout-container {
+  padding: 2rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Lato", sans-serif;
+}
+
+.checkout-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #545454;
+  font-size: 1.8rem;
+}
+
+.checkout-form div {
+  margin-bottom: 1rem;
+}
+
+.checkout-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: bold;
+  color: #545454;
+}
+
+.checkout-form input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d2d2d2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+  font-size: 1rem;
+}
+
+.checkout-form input:focus {
+  border-color: #ffe07f;
+  outline: none;
+}
+
+.confirm-btn {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1.5rem;
+  border: none;
+  background-color: #ffe07f;
+  color: #545454;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm-btn:hover {
+  background-color: #e5c871;
+}
+
+.confirm-btn:disabled {
+  background-color: #d2d2d2;
+  cursor: not-allowed;
+  color: #999;
+}
+
+.loading-message,
+.success-message {
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading-message {
+  color: #545454;
+  font-size: 1.2rem;
+}
+
+.success-message h2 {
+  color: #ffe07f;
+  margin-bottom: 1rem;
+}
+
+.success-message p {
+  color: #545454;
+  font-size: 1.1rem;
+}
+
+.success-message b {
+  color: #333;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .checkout-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+}

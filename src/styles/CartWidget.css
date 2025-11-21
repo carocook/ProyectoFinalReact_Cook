@@ -2,9 +2,18 @@
   position: relative;
 }
 
-.cart-icon {
+.cart-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #545454;
   cursor: pointer;
-  font-size: 1.2rem;
+}
+
+.cart-count {
+  margin-left: 5px;
+  font-weight: bold;
+  color: #ffe07f;
 }
 
 .cart-dropdown {
@@ -24,7 +33,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #545454#545454;
+  color: #545454;
 }
 
 .cart-empty {

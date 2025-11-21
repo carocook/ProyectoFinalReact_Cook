@@ -31,8 +31,9 @@
 .add-cart-btn {
   padding: 0.4rem 0.8rem;
   border: none;
-  background-color: #d2d2d2;
+  background-color: #ffe07f;
   color: #545454;
+  font-weight: bold;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Lato", sans-serif;
@@ -40,5 +41,5 @@
 }
 
 .add-cart-btn:hover {
-  background-color: #ffe07f;
+  background-color: #e5c871;
 }

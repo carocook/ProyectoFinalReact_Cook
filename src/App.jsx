@@ -1,46 +1,36 @@
 import { Routes, Route } from "react-router-dom";
-import { useState } from "react";
 import NavBar from "./components/NavBar";
 import ItemListContainer from "./containers/ItemListContainer";
 import ItemDetailContainer from "./containers/ItemDetailContainer";
+import Cart from "./pages/Cart";
+import Checkout from "./pages/Checkout";
 import NotFound from "./components/NotFound";
 
 function App() {
-  const [carrito, setCarrito] = useState([]);
-
   return (
     <>
-      <NavBar carrito={carrito} />
+      <NavBar />
 
       <Routes>
         <Route
           path="/"
           element={
-            <ItemListContainer
-              greeting="Bienvenida a nuestra tienda"
-              carrito={carrito}
-              setCarrito={setCarrito}
-            />
+            <ItemListContainer greeting="Bienvenidos a nuestra tienda" />
           }
         />
 
         <Route
           path="/category/:category"
           element={
-            <ItemListContainer
-              greeting="Descubrí la magia de nuestras joyas"
-              carrito={carrito}
-              setCarrito={setCarrito}
-            />
+            <ItemListContainer greeting="Descubrí la magia de nuestras joyas" />
           }
         />
 
-        <Route
-          path="/product/:id"
-          element={
-            <ItemDetailContainer carrito={carrito} setCarrito={setCarrito} />
-          }
-        />
+        <Route path="/product/:id" element={<ItemDetailContainer />} />
+
+        <Route path="/cart" element={<Cart />} />
+
+        <Route path="/checkout" element={<Checkout />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
